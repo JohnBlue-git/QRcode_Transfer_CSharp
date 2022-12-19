@@ -1,0 +1,36 @@
+﻿<Window x:Name="userform"  x:Class="bank.UserForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bank"
+        mc:Ignorable="d"
+        Title="UserForm" Height="420" Width="600" Closed="Final">
+    <Canvas>
+        <Grid x:Name="Function_Page">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="30,30,0,0" VerticalAlignment="Top" Width="330">
+                <Image x:Name="Frame" HorizontalAlignment="Left" Height="330" Margin="0,0,0,0" VerticalAlignment="Top" Width="330"/>
+            </Border>
+            <TextBlock x:Name="ID" HorizontalAlignment="Left" Margin="390,60,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBlock x:Name="ac_name" HorizontalAlignment="Left" Margin="390,90,0,0" TextWrapping="Wrap" Text="ac_name" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBlock x:Name="Balance" HorizontalAlignment="Left" Margin="390,150,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBlock x:Name="ac_amount" HorizontalAlignment="Left" Margin="390,180,0,0" TextWrapping="Wrap" Text="ac_amount" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <Button x:Name="recieve" Content="Recieve Code" HorizontalAlignment="Left" Margin="390,240,0,0" VerticalAlignment="Top" Width="180" FontSize="24" Click="Click_Recieve"/>
+            <Button x:Name="scan" Content="Scan Code" HorizontalAlignment="Left" Margin="390,300,0,0" VerticalAlignment="Top" Width="180" FontSize="24" Click="Click_Scan"/>
+        </Grid>
+        <Grid x:Name="Login_Page" Height="390" Width="570" Canvas.Left="600">
+            <TextBlock x:Name="Login_ID" HorizontalAlignment="Left" Margin="200,120,0,0" TextWrapping="Wrap" Text="Login ID" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <Button x:Name="Enter" Content="Enter" HorizontalAlignment="Left" Margin="200,240,0,0" VerticalAlignment="Top" Width="75" FontSize="24" Click="Login_Check"/>
+            <TextBox x:Name="login_id" HorizontalAlignment="Left" Margin="200,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+        </Grid>
+        <Grid x:Name="Transfer_Page" Height="390" Width="570" Canvas.Left="1200">
+            <TextBlock x:Name="Bank_Transfer" HorizontalAlignment="Left" Margin="90,90,0,0" TextWrapping="Wrap" Text="Bank" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBlock x:Name="bank_transfer" HorizontalAlignment="Left" Margin="90,130,0,0" TextWrapping="Wrap" Text="bk_name" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBlock x:Name="ID_Transfer" HorizontalAlignment="Left" Margin="90,190,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBlock x:Name="id_transfer" HorizontalAlignment="Left" Margin="90,230,0,0" TextWrapping="Wrap" Text="ac_name" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBlock x:Name="Transfer_Amount" HorizontalAlignment="Left" Margin="300,90,0,0" TextWrapping="Wrap" Text="Transfer_Amount" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <TextBox x:Name="amount_transfer" HorizontalAlignment="Left" Margin="300,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="180" FontSize="24"/>
+            <Button x:Name="Enter_Transfer" Content="Enter" HorizontalAlignment="Left" Margin="300,210,0,0" VerticalAlignment="Top" Width="75" FontSize="24" Click="Transfer_Click"/>
+        </Grid>
+    </Canvas>
+</Window>
