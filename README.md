@@ -14,7 +14,8 @@ MainWindow objects is the representation of Central Bank moniter.
 
 UserForm objects are the representation of the user side.
 
-Note: those .png placed in the repository would have more illustration.
+Note: Those .png placed in the repository would have more illustration.
+Note: ... have recorded how this application operates.
 
 # Platform
 VS2019
