@@ -3,6 +3,9 @@ A simple Fin-tech project that uses QRcode to share information and transfer mon
 
 Threads, Threadpool and Locks have been used in this project for simulating the situation in real server ...
 
+# Video Demonstration
+There is a Demonstration_QR.mp4
+
 # Structure
 This project use WPF to develop, XAML files(.xaml) are for front-end function and C# files(.cs) are for back-end function.
 
@@ -15,7 +18,6 @@ MainWindow objects is the representation of Central Bank moniter.
 UserForm objects are the representation of the user side.
 
 Note: Those .png placed in the repository would have more illustration.
-Note: ... have recorded how this application operates.
 
 # Platform
 VS2019
